@@ -1,5 +1,6 @@
 import express, { Request, Response } from 'express';
 import userRoutes from './routes/userRoutes';
+import { connectDB } from './config/db';
 
 const app = express();
 
@@ -13,6 +14,9 @@ app.use('/api/users', userRoutes);
 app.get('/', (req: Request, res: Response) => {
 	res.status(200).send({ message: 'Hi, I am Bunny Murkhandi' })
 });
+
+connectDB();
+
 
 //Start Server
 const port: number | string = process.env.PORT || 5000;
