@@ -7,7 +7,7 @@ export const User = mongoose.model('User',userSchema);
 
 
 
-// jobTitle,jobDescription, educationLevel, companyName, salary, experienceRequired, isActive, userApplied 
+// jobTitle : string, jobDescription : string, educationLevel : string, companyName : string, salary : Number, experienceRequired : Number, isActive : Boolean, userApplied : Number
  
 ///
 
