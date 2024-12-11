@@ -1,7 +1,8 @@
 import mongoose from "mongoose";
 import { userSchema } from "../schemas/userSchema";
+import { IUser } from "../interfaces/userInterface";
 
-export const User = mongoose.model('User',userSchema);
+export const User = mongoose.model<IUser>('User',userSchema);
 
 
 

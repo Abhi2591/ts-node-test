@@ -32,7 +32,6 @@ export const userSchema : Schema = new Schema({
     fullAddress : {
         type : String,
         required : false,
-        default : ''
     },
     isActive : {
         type : Boolean,
