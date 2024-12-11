@@ -24,10 +24,12 @@ export const jobSchema: Schema = new Schema({
     salary: {
         type: Number,
         required: true,
+        default: 0
     },
     experienceRequired: {
         type: Number,
         required: true,
+        default: 1
     },
     isActive: {
         type: Boolean,
@@ -37,5 +39,6 @@ export const jobSchema: Schema = new Schema({
     userApplied: {
         type: Number,
         required: true,
+        default: 0
     }
 }, { timestamps: true });
