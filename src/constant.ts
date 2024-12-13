@@ -1,1 +1,1 @@
-export const MONGO_URI : string = 'mongodb+srv://admin:admin@cluster0.c304v.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
+export const MONGO_URI : string = 'mongodb+srv://admin:admin@cluster0.c304v.mongodb.net/learning?retryWrites=true&w=majority&appName=Cluster0';
