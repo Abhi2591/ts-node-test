@@ -124,7 +124,7 @@ export const loginUser = async (req: Request, res: Response) => {
 				res.status(400).send({ message: "Invalid email or password" });
 			}
 		} else {
-			res.send(400).send({ message: "Invalid credentials" });
+			res.status(400).send({ message: "Invalid credentials" });
 		}
 	} catch (error) {
 		console.log(error);

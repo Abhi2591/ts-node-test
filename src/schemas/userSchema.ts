@@ -20,6 +20,11 @@ export const userSchema : Schema = new Schema({
         required : true, 
         unique : true,
     },
+    gender : {
+        type : String,
+        required : true,
+        enum : [ "Male", "Female", "Transgender" ]
+    },
     password : {
         type : String,
         required : true,
@@ -28,6 +33,10 @@ export const userSchema : Schema = new Schema({
     age : {
         type : Number,
         required : true
+    },
+    role : {
+        type : String,
+        enum : [ "User", "Super Admin", "Admin" ]
     },
     fullAddress : {
         type : String,
@@ -40,3 +49,14 @@ export const userSchema : Schema = new Schema({
     }
 }, {timestamps : true}); 
 
+
+
+
+
+
+// HOME WORK :
+
+// Create a new Project :
+// 1. Create User Schema --- > (firstName, lastName, userName, age, mobile, email, password, fullAddress, isAccountActive, gender[enum], role[enum] ---> ['User', 'Teacher', 'Admin'],); 
+// 2. API LIST : (CREATE(REG), GETALLUSERS, GETSINGLEUSERBYID, LOGIN,);
+// WITH MODEL, INTERFACE, SCHEMA, CONTROLLER, SERVER.TS, DBs, BCRYPT.JS, JWT, etc.
